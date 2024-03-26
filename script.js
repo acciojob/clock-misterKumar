@@ -16,7 +16,7 @@ const year = now.getFullYear();
 		day="AM"
 	}
     // Format the string with leading zeroes
-    const clockStr = `${date}/${month}/${year},${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} ${day}`;
+    const clockStr = `${date}/${month.toString().padStart(2, '0')}/${year},${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} ${day}`;
 
     timeElement.innerText = clockStr;
 }
